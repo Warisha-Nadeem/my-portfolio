@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warisha Nadeem - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9f9385f8ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <h2><span>Warisha Nadeem</span></h2>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars hamburg" id="hamburg"></i>
+            </nav>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><i class="fa-solid fa-xmark cancl" id="cancl"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Me Section (with picture, name, developer line, and intro) -->
+        <section id="about" class="section about-section">
+            <div class="about-flex">
+                <div class="about-img">
+                    <img src="images/placeholder.png" alt="Warisha Nadeem">
+                </div>
+                <div class="about-text">
+                    <h1 class="about-name">Heyy! I'm <span>Warisha Nadeem</span></h1>
+                     <p class="typewriter">I'm a <span class="highlight">Web Developer</span></p>
+                    <p>
+                         I'm an aspiring frontend developer  with a love for clean design and modern web technologies. I enjoy building responsive and interactive websites that provide great user experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-square-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-figma"></i>
+                   <span>Figma</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="section hobbies-section">
+            <h2>Hobbies</h2>
+            <div class="hobbies-list">
+                <div class="hobby">
+                  <i class="fa-solid fa-music" style="color: #74C0FC;"></i>Music               
+            </div>
+                <div class="hobby"><i class="fa-solid fa-camera-retro"></i>Photography</div>
+                <div class="hobby"><i class="fa-solid fa-person-running"></i> Running</div>
+                <div class="hobby"><i class="fa-solid fa-book-skull"></i>Reading</div>
+                <div class="hobby"><i class="fa-solid fa-gamepad" style="color: #48464e;"></i>Gaming</div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="section contact-section">
+            <h2>Contact Me</h2>
+            <form id="contactForm" autocomplete="off">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Type your message..."></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Warisha Nadeem. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
